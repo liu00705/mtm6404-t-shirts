@@ -75,7 +75,6 @@ function App() {
       return prev.map((shirt, i) => {
         if (i !== index) return shirt
 
-        // 保险一下：数量不要超过库存、也不要小于 1
         let qty = Number(value)
         if (qty < 1) qty = 1
         if (qty > shirt.stock) qty = shirt.stock
